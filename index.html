@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mozzarbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box-padre">
+        <nav></nav>
+        <div class="nav">
+            <div class="nav-header__img">
+                <img src="data:image/png;base64,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"
+                    alt="">
+            </div>
+            <div class="nav-header__link">
+                <p>
+                    <a href="a" class="nav-header__link--enlace">fotos</a>
+                    <a href="e" class="nav-header__link--enlace">reservation</a>
+                    <a href="w" class="nav-header__link--enlace">ubicacion</a>
+                    <a href="w" class="nav-header__link--enlace">carta</a>
+                    <a href="w" class="nav-header__link--enlace">conceptos</a>
+                </p>
+            </div>
+        </nav>
+            <div class="portada">
+            </div>
+        </div>
+        <div class="information-concepto">
+        <div class="information-concepto__caja">
+            <div><h2>conceptos</h2></div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis et ad voluptate veritatis a labore dicta!
+                Reiciendis facilis possimus necessitatibus ipsam non quia fugit, veritatis ducimus neque aperiam minima
+                nesciunt.</p>
+        </div>
+    </div>
+        <div class="photos-restaurant">
+            <div>
+                <img src="data:image/jpeg;base64,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"
+                    alt="">
+            </div>
+            <div>
+                <img class="photo-restaurant__dimension" src="https://restaurant-five-kappa.vercel.app/imagen_2.6108df22.jpg" alt="">
+            </div>
+            <div>
+                <div>
+                    <img class="photo-restaurant__dimension" src="https://restaurant-five-kappa.vercel.app/imagen_4.a9792907.jpg" alt="">
+                </div>
+            </div>
+            <div >
+                <img class="photo-restaurant__dimension" src="https://restaurant-five-kappa.vercel.app/imagen_3.8a959d23.jpg" alt="">
+            </div>
+            <div>
+                <img class="photo-restaurant__dimension" src="https://restaurant-five-kappa.vercel.app/imagen_6.5276ad19.jpg" alt="">
+            </div>
+            <div>
+                <img class="photo-restaurant__dimension" src="https://restaurant-five-kappa.vercel.app/imagen_7.f7bbe3e8.jpg" alt="">
+            </div>
+            <div>
+                <img class="photo-restaurant__dimension" src="https://restaurant-five-kappa.vercel.app/imagen_5.7d9387e2.jpg" alt="">
+            </div>
+        </div>
+        <div class="carta">
+           <div class="carta-menu">
+            <h2>menu</h2>
+           </div>
+           <div>
+            <img class="carta-menu__photos" src="https://restaurant-five-kappa.vercel.app/menu.88365416.jpg" alt="">
+           </div>
+           <div>
+            <button class="carta-menu__boton">ver carta de desayuno</button>
+           </div>
+        </div>
+        <div class="form-reservation">
+            <div>
+            <div class="form-reservaation__title">
+                 <h2>reserva</h2>
+                </div>
+            <div> <p> personas</p></div>
+            <div >
+                <input class="form-reservation__input" type="number" name="personas" id="">
+            </div>
+            <div><p>dia,hora</p></div> 
+            <div>
+                <input  class="form-reservation__input" type="time" name="fecha">
+            </div>
+            <div>tipo de meta</div> 
+            <div >
+                <input class="form-reservation__input" type="text" name="mesa">
+            </div> 
+            <div > 
+                
+                <button class="form-reservation__boton">reservar</button></div> 
+            <div><p class="form-reserve__parrafo">Si no encuentra disponibilidad, apúntese en la lista de espera</p></div>
+            <div >
+                <button class="form-reservation__boton">lista de espera</button>
+            </div>
+        </div>
+        <div class="form-reserve__horario">
+            <div class="form-reserve__titulo">
+                <h2>MOZZAR</h2>
+            </div>
+            
+            <h2>FOOD & DRINKS</h2>
+            <P class="form-reserve__parrafo">
+                Conde de Peñalver, 64
+                
+                28006 - Madrid
+                
+                Abrimos de Lunes a Domingos
+                
+                De 07:30 a 01:30</P>
+        </div>
+    </div>
+    <div class="blog-contenido">
+        <div class="blog-contenido__title">
+            <h2>blog</h2>
+        </div>
+        <div class="blog-contenido__global-articles">
+    <div class="blog-contenido__articulos">
+        <div>
+            <h3>MOZZAR BAR</h3>
+        </div>
+        <div>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias vel, repellendus cum nesciunt consequatur quae ut molestiae praesentium unde quod ipsam aspernatur quis eum, enim amet placeat iure, nobis suscipit?</P>
+        </div>
+        <div>
+            <P>admi 0 1</P>
+        </div>
+        
+        
+    </div>
+    <div class="blog-contenido__articulos">
+        <div>
+            <h3>MOZZAR BAR</h3>
+        </div>
+        <div>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias vel, repellendus cum nesciunt consequatur quae ut molestiae praesentium unde quod ipsam aspernatur quis eum, enim amet placeat iure, nobis suscipit?</P>
+        </div>
+        <div>
+            <P>admi 0 1</P>
+        </div>
+        
+        
+    </div>
+    <div class="blog-contenido__articulos">
+        <div>
+            <h3 class="tible-article__">MOZZAR BAR</h3>
+        </div>
+        <div>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias vel, repellendus cum nesciunt consequatur quae ut molestiae praesentium unde quod ipsam aspernatur quis eum, enim amet placeat iure, nobis suscipit?</P>
+        </div>
+        <div>
+            <P > 🤦admi 👍 0 💌1</P>
+        </div>
+  
+    </div>
+</div>
+<div class="blog-button">
+    <button class="blog-button__input">ver todas las entradas</button>
+</div>
+</div>
+<div class="box-information"> 
+    <div class="box-information__logo">
+        <img src="https://restaurant-five-kappa.vercel.app/logo.4593feec.png" alt="">
+    </div>
+    <div class="box-information__comehere">
+        <h2>Ven cuando quieras</h2>
+    </div>
+    <div class="box-information__contacts"> 
+        <div class="box-information__contacts--directions">
+            <div>
+<img class="img-information" src="https://cdn-icons-png.flaticon.com/512/2776/2776000.png" alt="">
+</div>
+<div class="box-information__directions--parrafo">
+ <div><p>c/gran via</p></div>
+ <div><p>28455-Madrid</p></div>
+
+</div>
+</div>
+        <div class="box-information__contacts--directions">
+<div>
+            <img class="img-information" src="https://cdn-icons-png.flaticon.com/512/2593/2593982.png">
+        </div>
+        <div class="box-information__directions--parrafo">
+            <p>958414458</p>
+        </div>
+        </div>
+        <div class="box-information__contacts--directions">
+        <div>
+<img class="img-information" src="https://cdn-icons-png.flaticon.com/512/5812/5812967.png" alt="">
+</div>
+<div class="box-information__directions--parrafo">
+    <p>hola@mozzarbar.com</p>
+</div>
+</div> 
+       
+    </div>
+</div>
+<div class="link-social">
+<div class="link-social__tittle">
+    <h2>S i g u e n o s</h2>
+</div>
+<div class="link-social__redes">
+    <div><button class="link-social__boton">FACEBOOCK</button></div>
+    <div><BUtton class="link-social__boton">INSTAGRAM</BUtton></div>
+</div>
+</div>
+<footer>
+    <div class="footer-information">
+        <div class="footer-information__link">
+            <div class="footer-information__link--conditions">
+                <h2>E N L A C E S  D E I N T E R E S</h2>
+            </div>
+            <div class="footer-information__link--cookies">
+            <button class="footer-information__link--cookies-boton">Aviso legale</button>
+            <div>
+                <button class="footer-information__link--cookies-boton">Cookies</button>
+            </div>
+            </div>
+
+        </div>
+        <div class="footer-information__horario">
+            <div class="footer-information__link--conditions">
+                <h2>H O R A R I O</h2>
+            </div>
+            <div class="footer-information__link--cookies">
+            <p class="footer-parrafo">Luneas a Domingo</p>
+            <div>
+                <p class="footer-parrafo">7:30 1:30</p>
+            </div>
+            </div>
+
+        </div>
+        <div class="footer-information__link--contactos">
+            <h2>C O N T A C T O</h2>
+        
+        <div>
+        <p class="footer-parrafo">C/Conde de Peñalve64</p>
+        <div>
+            <p class="footer-parrafo">28226-Madrid</p>
+        </div>
+        <div>
+            <p class="footer-parrafo">910258327</p>
+        </div>
+        <div>
+            <p class="footer-parrafo">hola@mozzabar.es</p>
+        </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+</footer>
+</div>
+
+    
+</body>
+
+</html>
